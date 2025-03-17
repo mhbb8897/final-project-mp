@@ -1,0 +1,168 @@
+/* Gaya Umum */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #D3D3D3;
+    color: #4B4B4B;
+}
+
+/* HEADER */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #8B0000;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 12px;
+    font-size: 16px;
+}
+
+.auth-buttons {
+    display: flex;
+}
+
+.auth-buttons a {
+    padding: 8px 14px;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 1px solid white;
+    margin-left: 10px;
+}
+
+.btn-signin {
+    background-color: transparent;
+    color: white;
+}
+
+.btn-signup {
+    background-color: white;
+    color: #8B0000;
+}
+
+/* HERO SECTION */
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    text-align: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 34px;
+    margin-bottom: 10px;
+    color: #4B4B4B;
+}
+
+.hero p {
+    font-size: 16px;
+    max-width: 600px;
+    line-height: 1.5;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.btn-signin2 {
+    background-color: #8B0000;
+    color: white;
+}
+
+.btn-signup2 {
+    background-color: white;
+    color: #8B0000;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        margin-top: 8px;
+    }
+
+    .nav-links a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .auth-buttons {
+        margin-top: 10px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero p {
+        font-size: 14px;
+        max-width: 90%;
+    }
+
+    .btn {
+        padding: 8px 18px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 8px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .nav-links a {
+        font-size: 14px;
+    }
+
+    .hero h1 {
+        font-size: 22px;
+    }
+
+    .hero p {
+        font-size: 13px;
+    }
+
+    .btn {
+        padding: 6px 14px;
+        font-size: 13px;
+    }
+}

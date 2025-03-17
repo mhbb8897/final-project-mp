@@ -1,0 +1,182 @@
+/* Reset Style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #D3D3D3; /* Abu-Abu Muda */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Container */
+.signup-container {
+    display: flex;
+    width: 80%;
+    max-width: 900px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+/* Bagian Kiri: Ilustrasi atau Info */
+.left-section {
+    flex: 1;
+    background: #8B0000; /* Merah Ati */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    text-align: center;
+}
+
+.left-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.left-section p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.left-section img {
+    width: 80%;
+    max-width: 250px;
+}
+
+/* Bagian Kanan: Form */
+.right-section {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right-section h2 {
+    color: #8B0000;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Form Input */
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #4B4B4B;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+/* Efek Fokus */
+.input-group input:focus {
+    border-color: #8B0000;
+    outline: none;
+    box-shadow: 0 0 5px rgba(139, 0, 0, 0.3);
+}
+
+/* Tombol Sign Up */
+.btn-signup {
+    background: #8B0000;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover Button */
+.btn-signup:hover {
+    background: #600000;
+    transform: scale(1.05);
+}
+
+/* Link Login */
+.login-link {
+    font-size: 14px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.login-link a {
+    color: #8B0000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+/* ✅ RESPONSIVE DESIGN ✅ */
+@media (max-width: 768px) {
+    .signup-container {
+        flex-direction: column;
+        width: 90%;
+    }
+
+    .left-section {
+        padding: 20px;
+    }
+
+    .left-section img {
+        width: 60%;
+    }
+
+    .right-section {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .signup-container {
+        width: 95%;
+    }
+
+    .left-section h2 {
+        font-size: 20px;
+    }
+
+    .left-section p {
+        font-size: 13px;
+    }
+
+    .right-section h2 {
+        font-size: 20px;
+    }
+
+    .input-group input {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .btn-signup {
+        font-size: 16px;
+    }
+}
